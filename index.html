@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+    <!--defer tells browser to wait until the page finishes the parsing before executing the script-->
+    <title>Weather Project</title>
+  </head>
+  <body>
+    <h1>Weather Dashboard</h1>
+    <div class="container">
+      <div class="weather-input">
+        <h3>Enter a City Name</h3>
+        <input
+          class="city-input"
+          type="text"
+          placeholder="Eg: Pune, Aurangabad"
+        />
+        <button class="search-btn">Search</button>
+        <div class="separator"></div>
+        <button class="location-btn">Use Current Location</button>
+      </div>
+      <div class="weather-data">
+        <div class="current-weather">
+          <div class="details">
+            <h2>______( ______ )</h2>
+            <h4>Temperature: __°C</h4>
+            <h4>Wind: __ M/S</h4>
+            <h4>Humidity: __%</h4>
+          </div>
+          <!-- <div class="icon">
+            <img
+              src="https://openweathermap.org/img/wn/10d@4x.png"
+              alt="weather-icon"
+            />
+            <h4>Moderate Rain</h4>
+          </div> -->
+        </div>
+        <div class="days-forecast">
+          <h3 style="margin-top: 20px; margin-bottom: 20px;">5 Day Forecast</h3>
+          <ul class="weather-cards">
+            <li class="card">
+              <h3>( ______ )</h3>
+              <!-- <img
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                alt="weather-icon"
+              /> -->
+              <h4>Temperature: __°C</h4>
+              <h4>Wind: __ M/S</h4>
+              <h4>Humidity: __%</h4>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <!-- <img
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                alt="weather-icon"
+              /> -->
+              <h4>Temperature: __°C</h4>
+              <h4>Wind: __ M/S</h4>
+              <h4>Humidity: __%</h4>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <!-- <img
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                alt="weather-icon"
+              /> -->
+              <h4>Temperature: __°C</h4>
+              <h4>Wind: __ M/S</h4>
+              <h4>Humidity: __%</h4>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <!-- <img
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                alt="weather-icon"
+              /> -->
+              <h4>Temperature: __°C</h4>
+              <h4>Wind: __ M/S</h4>
+              <h4>Humidity: __%</h4>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <!-- <img
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                alt="weather-icon"
+              /> -->
+              <h4>Temperature: __°C</h4>
+              <h4>Wind: __ M/S</h4>
+              <h4>Humidity: __%</h4>
+            </li>
+          </ul>
+        </div>
+        <div class="container2">
+          <canvas id="temperatureChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
