@@ -5,7 +5,7 @@ const currentWeatherDiv = document.querySelector(".current-weather");
 const weatherCardsDiv = document.querySelector(".weather-cards");
 
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = '38ec75ee347b25173236489acebadaf1';
 
 
 
